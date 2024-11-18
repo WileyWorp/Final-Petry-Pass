@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetryPass</title>
     <link rel="stylesheet" href="tView.css">
-    <script src="tView.js"></script>
 </head>
 
 <body>
     <div id="headerDIV">
-        <h1 id="header">Room #202 Teacher View</h1>
+        <h1 id="header">PetryPass - Teacher Log In</h1>
     </div>
-    <div id="roomInputDIV">
-        <h1>Please input a room number:</h1>
-        <input type="password" name="room#" id="roomInput">
-        <button id="enterButton">Enter</button>
+    <form action="process.php" method="post">
+        <p>Username: <input type="text" name="user" suggested="Last Name"></p>
+        <p>Password: <input type="password" name="pw" suggested="Password"></p>
+        <input type="submit" value="LOG IN">
+    </form>
+    <div id="connectDIV" style="text-align: center;justify-content: center;">
+        <h1>Connected!</h1>
     </div>
-    <h1 id="h1">WILEY has sent a bPass request</h1>
-    <div id="room">
-        <div id="acceptButton">A</div>
-        <div id="denyButton">D</div>
+
+    <div id="tRoom" style="display: none;text-align: center;justify-content: center;">
+        <h1>Welcome, <label id="tName"></label></h1>
+        <div id="requests"></div>
     </div>
 </body>
-<script type="module" src="tView.js"></script>
 
 </html>

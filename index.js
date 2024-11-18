@@ -2,9 +2,9 @@ const enterButton = document.getElementById('enterButton')
 const requestButton = document.getElementById('requestButton')
 
 enterButton.addEventListener('click', function () {
-    if (document.getElementById('roomInputDIV').style.display = 'block')
+    if (document.getElementById('roomInputDIV').style.display = 'flex')
         document.getElementById('roomInputDIV').style.display = 'none';
-    document.getElementById('room').style.display = 'inline-flex';
+    document.getElementById('room').style.display = 'flex';
 })
 
 requestButton.addEventListener('click', function () {
@@ -12,7 +12,8 @@ requestButton.addEventListener('click', function () {
 })
 
 document.getElementById('header').addEventListener('click', function () {
-    location.replace("https://wileyworp.github.io/Petry-Pass/tView/")
+    location.replace("./tView/")
+    // location.replace("https://wileyworp.github.io/Petry-Pass/tView/")
 })
 
 let minutes = 0;
