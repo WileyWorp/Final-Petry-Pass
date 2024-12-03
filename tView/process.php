@@ -26,6 +26,6 @@ document.querySelector('#connectDIV').style.display = 'flex';
 setTimeout(function() {
 document.querySelector('#connectDIV').style.display = 'none';
 document.querySelector('#tRoom').style.display = 'flex';
-}, 2000);
+}, 1500);
 document.querySelector('#tName').textContent = <?php echo json_encode($username); ?>;
 </script>
